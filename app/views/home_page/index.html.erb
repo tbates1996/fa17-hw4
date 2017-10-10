@@ -1,0 +1,16 @@
+<h1>All cats</h1>
+<% @cats.each do |cat| %>
+	<%= cat.name %>
+	</br>
+<% end %>
+<h1>All Users</h1>
+<% @users.each do |user| %>
+	<%= user.details %>
+	</br>
+<% end %>
+<h1>Todo</h1>
+<% @todo.each do |event| %>
+	<%= event.task %>
+	</br>
+<% end %>
+<%= link_to "New Task", todo_new_path %>
